@@ -68,7 +68,9 @@
 
 
 / {
-    trackball_listener {
+    // Labelled so charybdis.keymap can attach per-layer scaling overrides
+    // (snipe / sway) to it. The device binding stays here with the hardware.
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
